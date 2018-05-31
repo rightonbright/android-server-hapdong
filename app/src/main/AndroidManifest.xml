@@ -3,8 +3,10 @@
     package="com.example.imsihyun.android_server_hapdong">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
+        android:name=".ApplicationController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,17 +21,17 @@
 
         <activity android:name=".LoginActivity"
             android:label="@string/app_name_1">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
         <activity android:name=".SignUpActivity"
-            android:label="@string/app_name_2"></activity>
+            android:label="@string/app_name_2">
+
+        </activity>
     </application>
 
 </manifest>
